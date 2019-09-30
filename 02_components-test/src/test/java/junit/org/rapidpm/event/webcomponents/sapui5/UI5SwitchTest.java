@@ -34,8 +34,8 @@ public class UI5SwitchTest
     private final TestBenchTestCase testCase = new TestBenchTestCase() { };
 
     public UI5SwitchElement ui5SwitchElement() {
-      return testCase.$(UI5SwitchElement.class)
-                     .id(ID);
+      return testCase.$(UI5SwitchElement.class).first();
+//                     .id(ID);
     }
   }
 

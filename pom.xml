@@ -88,9 +88,11 @@
     <vaadin-install-nodejs>true</vaadin-install-nodejs>
     <!--    <frontend-maven-plugin.installDirectory>_data</frontend-maven-plugin.installDirectory>-->
     <undertow.version>2.0.26.Final</undertow.version>
+    <testcontainers.version>1.12.1</testcontainers.version>
   </properties>
 
-  <!-- Just to disable any accidential deployment to maven.central -->
+
+  <!-- Just to disable any accidental deployment to maven.central -->
   <distributionManagement>
     <repository>
       <id>localhost</id>
@@ -189,7 +191,6 @@
     <dependency>
       <groupId>com.vaadin</groupId>
       <artifactId>vaadin-testbench</artifactId>
-<!--      <version>14.0.5</version>-->
       <scope>test</scope>
       <exclusions>
         <exclusion>

@@ -21,7 +21,6 @@ public class ServletContainerExtension
     final String[] args       = new String[2];
     args[0]= "-pkg";
     args[1]= packageToDeploy;
-//    Stagemonitor.init();
     final CoreUIJavaService uiService = new CoreUIJavaService();
     uiService.startup(args);
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)

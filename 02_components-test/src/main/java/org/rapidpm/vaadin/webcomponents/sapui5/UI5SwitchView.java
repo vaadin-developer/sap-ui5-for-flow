@@ -18,7 +18,8 @@ public class UI5SwitchView
 
   public static final String TEXT_ON  = "ON";
   public static final String TEXT_OFF = "OFF";
-  public static final String ID       = "element-to-test";
+  public static final String ID       = "id_testelement";
+  public static final String ID_BTN   = "id_btn";
 
   public final Html HTML_BR = new Html("<br/>");
 
@@ -33,6 +34,7 @@ public class UI5SwitchView
     content.add(ui5Switch);
     content.add(HTML_BR);
     final Button button = new Button("switch style");
+    button.setId(ID_BTN);
     button.addClickListener((event) -> ui5Switch.setGraphical(!ui5Switch.isGraphical()));
     content.add(button);
     content.add(HTML_BR);
