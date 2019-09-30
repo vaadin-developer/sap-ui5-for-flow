@@ -202,6 +202,10 @@
           <groupId>net.bytebuddy</groupId>
           <artifactId>byte-buddy</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>com.vaadin</groupId>
+          <artifactId>license-checker</artifactId>
+        </exclusion>
       </exclusions>
       <!--<scope>test</scope>-->
     </dependency>
@@ -217,6 +221,10 @@
         <exclusion>
           <groupId>net.bytebuddy</groupId>
           <artifactId>byte-buddy</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.vaadin</groupId>
+          <artifactId>license-checker</artifactId>
         </exclusion>
       </exclusions>
       <!--<scope>test</scope>-->
