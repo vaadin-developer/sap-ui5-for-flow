@@ -40,6 +40,15 @@ To support the Heroku pipeline we need a few preparations.
     * **-port** make the dynamic associated port available for the app
 1) add a file **settings.xml** to configure the maven build process
 
+### For this project
+This project contains a demo that is using the SAP UI 5 WebComponents for Flow.
+The Demo itself is located inside the module **03_demoapp**.
+The URL to have a look at this demo is [https://flow-sap-ui5.herokuapp.com/](https://flow-sap-ui5.herokuapp.com/)
+However, if you want to have a look at it on your machine you can run the Docker image that is provided as well.
+
+The basic demoapp is created with the Vaadin App Starter. [https://start.vaadin.com](https://start.vaadin.com)
+### Docker DemoApp
+**TBD**
 
 ## target of this project
 With this project, we want to provide a serverside java API to work with SAP UI 5 

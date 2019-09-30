@@ -84,6 +84,7 @@
     <jdk.version>1.8</jdk.version>
 
     <!--Vaadin-->
+    <vaadin-v14.version>14.0.7</vaadin-v14.version>
     <vaadin-productionMode>false</vaadin-productionMode>
     <vaadin-install-nodejs>true</vaadin-install-nodejs>
     <!--    <frontend-maven-plugin.installDirectory>_data</frontend-maven-plugin.installDirectory>-->
