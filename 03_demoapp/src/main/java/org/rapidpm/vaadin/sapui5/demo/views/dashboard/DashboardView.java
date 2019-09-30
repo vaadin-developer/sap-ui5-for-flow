@@ -29,6 +29,9 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
 
 import org.rapidpm.vaadin.sapui5.demo.MainView;
+import org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge;
+import org.rapidpm.vaadin.webcomponents.sapui5.UI5Icon;
+import org.rapidpm.vaadin.webcomponents.sapui5.UI5Icons;
 
 @Route(value = "dashboard", layout = MainView.class)
 @RouteAlias(value = "", layout = MainView.class)
@@ -48,6 +51,21 @@ public class DashboardView extends Div implements AfterNavigationObserver {
     public DashboardView() {
         setId("dashboard-view");
         Board board = new Board();
+
+        final UI5Badge ui5Badge = new UI5Badge();
+        ui5Badge.setColorScheme(UI5Badge.ColorScheme.FOUR);
+        ui5Badge.setText("some text");
+        ui5Badge.setUI5Icon(UI5Icons.PHONE.asUI5Icon());
+
+
+
+        board.addRow(
+            createBadge("SAP Badge", new H2(), "success-text", "A demo", "badge"),
+            ui5Badge
+
+                    );
+
+
         board.addRow(
                 createBadge("Users", usersH2, "primary-text", "Current users in the app", "badge"),
                 createBadge("Events", eventsH2, "success-text", "Events from the views", "badge success"),
