@@ -38,15 +38,15 @@
     <name>Vaadin</name>
     <url>http://www.vaadin.com</url>
   </organization>
-  <url>https://github.com/svenruppert/2019_OC1_DEV3111</url>
+  <url>https://github.com/vaadin-developer/sap-ui5-for-flow</url>
 
   <scm>
-    <url>https://github.com/svenruppert/2019_OC1_DEV3111</url>
+    <url>https://github.com/vaadin-developer/sap-ui5-for-flow</url>
     <connection>
-      scm:git:https://github.com/svenruppert/2019_OC1_DEV3111.git
+      scm:git:https://github.com/vaadin-developer/sap-ui5-for-flow.git
     </connection>
     <developerConnection>
-      scm:git:https://github.com/svenruppert/2019_OC1_DEV3111
+      scm:git:https://github.com/vaadin-developer/sap-ui5-for-flow
     </developerConnection>
     <tag>HEAD</tag>
   </scm>
@@ -63,7 +63,7 @@
   <issueManagement>
     <system>Github</system>
     <url>
-      https://github.com/svenruppert/2019_OC1_DEV3111/issues
+      https://github.com/vaadin-developer/sap-ui5-for-flow/issues
     </url>
   </issueManagement>
   <licenses>
@@ -79,7 +79,6 @@
     <jdk.version>1.8</jdk.version>
 
     <!--Vaadin-->
-    <vaadin-v14.version>14.0.7</vaadin-v14.version>
     <vaadin-productionMode>false</vaadin-productionMode>
     <vaadin-install-nodejs>true</vaadin-install-nodejs>
     <!--    <frontend-maven-plugin.installDirectory>_data</frontend-maven-plugin.installDirectory>-->
