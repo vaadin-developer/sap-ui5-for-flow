@@ -43,6 +43,11 @@
     </dependency>
     <dependency>
       <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-notification-flow</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.vaadin</groupId>
       <artifactId>vaadin-board-flow</artifactId>
       <exclusions>
         <exclusion>
