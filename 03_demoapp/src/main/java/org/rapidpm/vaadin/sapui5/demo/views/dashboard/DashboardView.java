@@ -1,18 +1,10 @@
 package org.rapidpm.vaadin.sapui5.demo.views.dashboard;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-
 import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.board.Board;
 import com.vaadin.flow.component.charts.Chart;
-import com.vaadin.flow.component.charts.model.ChartType;
-import com.vaadin.flow.component.charts.model.Configuration;
-import com.vaadin.flow.component.charts.model.Crosshair;
-import com.vaadin.flow.component.charts.model.ListSeries;
-import com.vaadin.flow.component.charts.model.XAxis;
-import com.vaadin.flow.component.charts.model.YAxis;
+import com.vaadin.flow.component.charts.model.*;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.grid.Grid;
@@ -21,24 +13,28 @@ import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
-import com.vaadin.flow.router.AfterNavigationEvent;
-import com.vaadin.flow.router.AfterNavigationObserver;
-import com.vaadin.flow.router.PageTitle;
-import com.vaadin.flow.router.Route;
-import com.vaadin.flow.router.RouteAlias;
-
+import com.vaadin.flow.router.*;
+import org.jetbrains.annotations.NotNull;
+import org.rapidpm.dependencies.core.logger.HasLogger;
 import org.rapidpm.vaadin.sapui5.demo.MainView;
 import org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge;
-import org.rapidpm.vaadin.webcomponents.sapui5.UI5Icon;
 import org.rapidpm.vaadin.webcomponents.sapui5.UI5Icons;
+import org.rapidpm.vaadin.webcomponents.sapui5.UI5Timeline;
+import org.rapidpm.vaadin.webcomponents.sapui5.UI5TimelineItem;
+
+import java.time.Duration;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Route(value = "dashboard", layout = MainView.class)
 @RouteAlias(value = "", layout = MainView.class)
 @PageTitle("Dashboard")
 @CssImport(value = "styles/views/dashboard/dashboard-view.css", include = "lumo-badge")
 @JsModule("@vaadin/vaadin-lumo-styles/badge.js")
-public class DashboardView extends Div implements AfterNavigationObserver {
+public class DashboardView extends Div implements AfterNavigationObserver, HasLogger {
 
     private Grid<HealthGridItem> grid = new Grid<>();
 
@@ -60,17 +56,25 @@ public class DashboardView extends Div implements AfterNavigationObserver {
 
 
         board.addRow(
-            createBadge("SAP Badge", new H2(), "success-text", "A demo", "badge"),
             ui5Badge
 
                     );
 
 
-        board.addRow(
-                createBadge("Users", usersH2, "primary-text", "Current users in the app", "badge"),
-                createBadge("Events", eventsH2, "success-text", "Events from the views", "badge success"),
-                createBadge("Conversion", conversionH2, "error-text","User conversion rate", "badge error")
-        );
+//        board.addRow(
+//                createBadge("Users", usersH2, "primary-text", "Current users in the app", "badge"),
+//                createBadge("Events", eventsH2, "success-text", "Events from the views", "badge success"),
+//                createBadge("Conversion", conversionH2, "error-text","User conversion rate", "badge error")
+//        );
+
+
+      board.addRow(nextTimeLineItem(),nextTimeLineItem(),nextTimeLineItem(),nextTimeLineItem());
+      final UI5Timeline ui5Timeline = new UI5Timeline();
+      ui5Timeline.add(nextTimeLineItem());
+      ui5Timeline.add(nextTimeLineItem());
+      ui5Timeline.add(nextTimeLineItem());
+      board.addRow(ui5Timeline);
+
 
         monthlyVisitors.getConfiguration()
                 .setTitle("Monthly visitors per city");
@@ -176,4 +180,23 @@ public class DashboardView extends Div implements AfterNavigationObserver {
         y.setMin(0);
         configuration.addyAxis(y);
     }
+
+
+  @NotNull
+  private UI5TimelineItem nextTimeLineItem() {
+    final UI5TimelineItem ui5TimelineItem = new UI5TimelineItem();
+    ui5TimelineItem.setItemName("timeLineIcon");
+    ui5TimelineItem.setTitleText("Title");
+    ui5TimelineItem.setSubtitleText("SubTitle as long as usefull..");
+    ui5TimelineItem.setIcon(UI5Icons.PHONE);
+    ui5TimelineItem.setItemNameClickable(true);
+    ui5TimelineItem.add(new Text("some more infos about the event that should happen.."));
+    ui5TimelineItem.addItemNameClickEventListener((UI5TimelineItem.TimeLineItemClicked) domEvent -> {
+      logger().info("got an event (data)" + domEvent.getEventData());
+      logger().info("got an event (source)" + domEvent.getSource());
+      logger().info("got an event (type)" + domEvent.getType());
+      Notification.show("TimeLine was clicked", 1_000, Notification.Position.BOTTOM_CENTER);
+    });
+    return ui5TimelineItem;
+  }
 }
