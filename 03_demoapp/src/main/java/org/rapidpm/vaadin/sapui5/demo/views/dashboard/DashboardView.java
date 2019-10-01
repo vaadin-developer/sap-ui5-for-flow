@@ -60,12 +60,11 @@ public class DashboardView extends Div implements AfterNavigationObserver, HasLo
 
                     );
 
-
-//        board.addRow(
-//                createBadge("Users", usersH2, "primary-text", "Current users in the app", "badge"),
-//                createBadge("Events", eventsH2, "success-text", "Events from the views", "badge success"),
-//                createBadge("Conversion", conversionH2, "error-text","User conversion rate", "badge error")
-//        );
+        board.addRow(
+                createBadge("Users", usersH2, "primary-text", "Current users in the app", "badge"),
+                createBadge("Events", eventsH2, "success-text", "Events from the views", "badge success"),
+                createBadge("Conversion", conversionH2, "error-text","User conversion rate", "badge error")
+        );
 
 
       board.addRow(nextTimeLineItem(),nextTimeLineItem(),nextTimeLineItem(),nextTimeLineItem());
