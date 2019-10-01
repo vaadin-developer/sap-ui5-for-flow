@@ -13,13 +13,10 @@ import com.vaadin.flow.dom.Element;
 @Tag(UI5Button.TAG_NAME)
 @NpmPackage(value = "@ui5/webcomponents", version = UI5VersionDefinitions.UI5_VERSION)
 @JsModule("@ui5/webcomponents/dist/Button.js")
-public class UI5Button extends Component implements HasSize, HasStyle, HasText, HasUI5Icon, ClickNotifier<UI5Button> {
+public class UI5Button extends Component implements HasSize, HasStyle, HasText, HasUI5Icon,
+    HasUI5IconEnd, HasUI5Disabled, HasUI5ButtonDesign, ClickNotifier<UI5Button> {
 
   protected static final String TAG_NAME = "ui5-button";
-
-  protected static final String ATTRIBUTE_ICON_END = "icon-end";
-  protected static final String ATTRIBUTE_DESIGN = "design";
-  protected static final String ATTRIBUTE_DISABLED = "disabled";
 
   public UI5Button() {
     setDefaults();
@@ -31,26 +28,7 @@ public class UI5Button extends Component implements HasSize, HasStyle, HasText, 
   }
 
   private void setDefaults() {
-
     // NOOP
   }
-
-  public void setDesign(UI5ButtonDesign buttonDesign) {
-    getElement().setAttribute(ATTRIBUTE_DESIGN, buttonDesign.getAttributeName());
-  }
-
-  public void setDisabled(boolean disabled) {
-    getElement().setAttribute(ATTRIBUTE_DISABLED, disabled);
-  }
-
-  public void setIconEnd(boolean iconEnd) {
-    getElement().setAttribute(ATTRIBUTE_ICON_END, iconEnd);
-  }
-
-  public boolean isIconEnd() {
-    String iconFirst = getElement().getAttribute(ATTRIBUTE_ICON_END);
-    return "true".equalsIgnoreCase(iconFirst);
-  }
-
 
 }
