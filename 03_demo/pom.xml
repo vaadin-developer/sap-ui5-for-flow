@@ -17,8 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>org.rapidpm.vaadin</groupId>
-      <artifactId>nano-vaadin-jetty</artifactId>
-      <version>01.00.00-RPM</version>
+      <artifactId>nano-vaadin-undertow</artifactId>
     </dependency>
 
 
