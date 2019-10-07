@@ -63,12 +63,6 @@
     <dependency>
       <groupId>com.vaadin</groupId>
       <artifactId>vaadin-charts-flow</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>com.vaadin</groupId>
-          <artifactId>license-checker</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
 
 

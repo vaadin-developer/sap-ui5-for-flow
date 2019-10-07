@@ -1,67 +1,26 @@
-package org.rapidpm.vaadin.sapui5.demo.views.dashboard;
+package org.rapidpm.vaadin.sapui5.demo.views.dashboard
 
-import java.time.LocalDate;
+import java.time.LocalDate
 
 /**
  * Simple DTO class for the inbox list to demonstrate complex object data
  */
-public class HealthGridItem {
+class HealthGridItem {
 
-    private LocalDate itemDate;
-    private String city;
-    private String country;
-    private String status;
-    private String theme;
+  var itemDate: LocalDate? = null
+  var city: String? = null
+  var country: String? = null
+  var status: String? = null
+  var theme: String? = null
 
-    public HealthGridItem() {
+  constructor() {
+  }
 
-    }
-
-    public HealthGridItem(LocalDate itemDate, String city, String country, String status, String theme) {
-        this.itemDate = itemDate;
-        this.city = city;
-        this.country = country;
-        this.status = status;
-        this.theme = theme;
-    }
-
-    public LocalDate getItemDate() {
-        return itemDate;
-    }
-
-    public void setItemDate(LocalDate itemDate) {
-        this.itemDate = itemDate;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getTheme() {
-        return theme;
-    }
-
-    public void setTheme(String theme) {
-        this.theme = theme;
-    }
+  constructor(itemDate: LocalDate, city: String, country: String, status: String, theme: String) {
+    this.itemDate = itemDate
+    this.city = city
+    this.country = country
+    this.status = status
+    this.theme = theme
+  }
 }
