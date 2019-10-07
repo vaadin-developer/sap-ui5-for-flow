@@ -21,7 +21,7 @@ public class UI5SwitchView
   public static final String ID       = "id_testelement";
   public static final String ID_BTN   = "id_btn";
 
-  public final Html HTML_BR = new Html("<br/>");
+  public static final Html HTML_BR = new Html("<br/>");
 
   public UI5SwitchView() {
     final Div       content   = getContent();

@@ -5,14 +5,14 @@ import com.vaadin.flow.component.PropertyDescriptor;
 import com.vaadin.flow.component.PropertyDescriptors;
 
 public interface HasUI5IconEnd extends HasElement {
-  static PropertyDescriptor<Boolean, Boolean> iconEndProperty =
+  PropertyDescriptor<Boolean, Boolean> ICON_END_PROPERTY =
       PropertyDescriptors.propertyWithDefault("iconEnd", false);
 
-  default public void setIconEnd(boolean iconEnd) {
-    iconEndProperty.set(this, iconEnd);
+  default void setIconEnd(boolean iconEnd) {
+    ICON_END_PROPERTY.set(this, iconEnd);
   }
 
-  default public boolean isIconEnd() {
-    return iconEndProperty.get(this);
+  default boolean isIconEnd() {
+    return ICON_END_PROPERTY.get(this);
   }
 }
