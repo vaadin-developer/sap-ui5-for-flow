@@ -17,6 +17,13 @@
   <dependencies>
     <dependency>
       <groupId>org.rapidpm.vaadin</groupId>
+      <artifactId>nano-vaadin-jetty</artifactId>
+      <version>01.00.00-RPM</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.rapidpm.vaadin</groupId>
       <artifactId>sap-ui5-for-flow-components</artifactId>
     </dependency>
     <!--For Core Vaadin Components-->
@@ -41,21 +48,7 @@
       <groupId>com.vaadin</groupId>
       <artifactId>vaadin-tabs-flow</artifactId>
     </dependency>
-    <dependency>
-      <groupId>com.vaadin</groupId>
-      <artifactId>vaadin-notification-flow</artifactId>
-    </dependency>
 
-    <dependency>
-      <groupId>com.vaadin</groupId>
-      <artifactId>vaadin-board-flow</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>com.vaadin</groupId>
-          <artifactId>license-checker</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
     <dependency>
       <groupId>com.vaadin</groupId>
       <artifactId>vaadin-grid-flow</artifactId>
@@ -64,6 +57,15 @@
       <groupId>com.vaadin</groupId>
       <artifactId>vaadin-charts-flow</artifactId>
     </dependency>
+
+    <!--    external Flow components -->
+    <dependency>
+      <groupId>com.github.appreciated</groupId>
+      <artifactId>vaadin-css-grid</artifactId>
+      <version>2.0.0.beta2</version>
+    </dependency>
+
+
 
 
   </dependencies>

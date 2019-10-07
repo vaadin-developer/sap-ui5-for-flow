@@ -3,8 +3,11 @@ package org.rapidpm.vaadin.webcomponents.sapui5;
 import java.util.Arrays;
 
 public enum UI5ButtonDesign {
-  DEFAULT("Default"), EMPHASIZED("Emphasized"), POSITIVE("Positive"), NEGATIVE(
-      "Negative"), TRANSPARENT("Transparent");
+  DEFAULT("Default"),
+  EMPHASIZED("Emphasized"),
+  POSITIVE("Positive"),
+  NEGATIVE("Negative"),
+  TRANSPARENT("Transparent");
 
   private final String attributeName;
 
@@ -17,7 +20,9 @@ public enum UI5ButtonDesign {
   }
 
   public static UI5ButtonDesign fromAttributeName(String attributeName) {
-    return Arrays.stream(UI5ButtonDesign.values()).filter(i -> i.attributeName.equals(attributeName))
-        .findFirst().orElse(null);
+    return Arrays.stream(UI5ButtonDesign.values())
+                 .filter(i -> i.attributeName.equals(attributeName))
+                 .findFirst()
+                 .orElse(null);
   }
 }
