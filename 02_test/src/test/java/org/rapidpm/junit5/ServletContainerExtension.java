@@ -4,7 +4,7 @@ import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.platform.commons.util.AnnotationUtils;
-import demo.CoreUIJavaService;
+import org.rapidpm.vaadin.nano.CoreUIServiceJava;
 
 import java.util.Optional;
 
@@ -16,22 +16,23 @@ public class ServletContainerExtension
   public void beforeEach(ExtensionContext ctx) throws Exception {
 
     final Optional<VaadinTutorial> vaadinTutorial = AnnotationUtils.findAnnotation(ctx.getTestClass(),
-                                                                               VaadinTutorial.class);
-    final String packageToDeploy = vaadinTutorial.get().packageToDeploy();
-    final String[] args       = new String[2];
-    args[0]= "-pkg";
-    args[1]= packageToDeploy;
-    final CoreUIJavaService uiService = new CoreUIJavaService();
-    uiService.startup(args);
+                                                                                   VaadinTutorial.class);
+    final String   packageToDeploy = vaadinTutorial.get()
+                                                   .packageToDeploy();
+    final String[] args            = new String[2];
+    args[0] = "-pkg";
+    args[1] = packageToDeploy;
+    final CoreUIServiceJava coreUIServiceJava = new CoreUIServiceJava().executeCLI(args);
+    coreUIServiceJava.startup();
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)
-       .put(CoreUIJavaService.class.getSimpleName(), uiService);
+       .put(CoreUIServiceJava.class.getSimpleName(), coreUIServiceJava);
   }
 
 
   @Override
   public void afterEach(ExtensionContext ctx) throws Exception {
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)
-       .get(CoreUIJavaService.class.getSimpleName(), CoreUIJavaService.class)
+       .get(CoreUIServiceJava.class.getSimpleName(), CoreUIServiceJava.class)
        .shutdown();
   }
 }
