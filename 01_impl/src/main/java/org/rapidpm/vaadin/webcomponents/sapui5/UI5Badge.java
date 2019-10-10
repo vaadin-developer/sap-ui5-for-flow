@@ -4,7 +4,7 @@ import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
-import static org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge.*;
+import static org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge.TAG_NAME;
 
 
 @Tag(TAG_NAME)
@@ -14,7 +14,7 @@ public class UI5Badge
     extends Component
     implements HasSize, HasStyle, HasText, HasComponents {
 
-  public static final String TAG_NAME = "ui5-badge";
+  public static final String TAG_NAME               = "ui5-badge";
   public static final String ATTRIBUTE_COLOR_SCHEME = "colorScheme";
 
   public String getColorScheme() {
@@ -53,15 +53,16 @@ public class UI5Badge
     TEN(10);
 
     private int colorScheme;
+
     ColorScheme(int i) {
       this.colorScheme = i;
     }
 
-    public int value(){
+    public int value() {
       return this.colorScheme;
     }
 
-    public String asString(){
+    public String asString() {
       return String.valueOf(value());
     }
 

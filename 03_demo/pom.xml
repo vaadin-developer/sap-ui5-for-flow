@@ -17,8 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>org.rapidpm.vaadin</groupId>
-      <artifactId>nano-vaadin-jetty</artifactId>
-      <version>01.00.00-RPM</version>
+      <artifactId>nano-vaadin-undertow</artifactId>
     </dependency>
 
 
@@ -86,10 +85,11 @@
             <configuration>
               <finalName>vaadin-app</finalName>
               <transformers>
+                <transformer
+                    implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <manifestEntries>
-                    <!--                    <Main-Class>demo.StartupJava</Main-Class>-->
-                    <Main-Class>demo.StartupJava</Main-Class>
+                    <Main-Class>org.rapidpm.vaadin.nano.CoreUIServiceJava</Main-Class>
                   </manifestEntries>
                 </transformer>
               </transformers>

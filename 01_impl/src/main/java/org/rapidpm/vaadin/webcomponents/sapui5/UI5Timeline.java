@@ -19,11 +19,11 @@ import org.rapidpm.dependencies.core.logger.HasLogger;
  * item-name-clickable>
  * </ui5-timeline-item>
  * <ui5-timeline-item title-text="Weekly Sync - CP Design" subtitle-text="27.07.2017 (11:00 - 12:30)" icon="sap-icon://calendar">
- * 		<div>MR SOF02 2.43</div>
- * 	</ui5-timeline-item>
- * 	<ui5-timeline-item title-text="Video Converence Call - UI5" subtitle-text="31.01.2018 (12:00 - 13:00)" icon="sap-icon://calendar">
- * 		<div>Online meeting</div>
- * 	</ui5-timeline-item>
+ *    <div>MR SOF02 2.43</div>
+ *  </ui5-timeline-item>
+ *  <ui5-timeline-item title-text="Video Converence Call - UI5" subtitle-text="31.01.2018 (12:00 - 13:00)" icon="sap-icon://calendar">
+ *     <div>Online meeting</div>
+ * </ui5-timeline-item>
  * </ui5-timeline>
  */
 

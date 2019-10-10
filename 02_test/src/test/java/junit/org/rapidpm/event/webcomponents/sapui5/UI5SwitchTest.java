@@ -10,8 +10,8 @@ import org.rapidpm.junit5.VaadinTutorial;
 import org.rapidpm.junit5.WebDriverParameterResolver;
 import org.rapidpm.vaadin.webcomponents.sapui5.UI5SwitchElement;
 
-import static demo.CoreUIJavaService.CORE_UI_SERVER_PORT;
 import static java.lang.System.getProperty;
+import static org.rapidpm.vaadin.nano.CoreUIServiceJava.CORE_UI_SERVER_PORT;
 import static org.rapidpm.vaadin.webcomponents.sapui5.UI5SwitchView.*;
 
 @VaadinTutorial()
@@ -34,7 +34,8 @@ public class UI5SwitchTest
     private final TestBenchTestCase testCase = new TestBenchTestCase() { };
 
     public UI5SwitchElement ui5SwitchElement() {
-      return testCase.$(UI5SwitchElement.class).first();
+      return testCase.$(UI5SwitchElement.class)
+                     .first();
 //                     .id(ID);
     }
   }
