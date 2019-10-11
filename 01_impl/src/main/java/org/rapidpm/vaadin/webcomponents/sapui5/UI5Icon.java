@@ -12,13 +12,13 @@ public class UI5Icon
     extends Component {
 
   public static final String ATTRIBUTE_SRC = "src";
-  public static final String TAG_NAME = "ui5-icon";
+  public static final String TAG_NAME      = "ui5-icon";
 
-  public void setSource(String src){
+  public void setSource(String src) {
     getElement().setAttribute(ATTRIBUTE_SRC, src);
   }
 
-  public String getSource(){
+  public String getSource() {
     return getElement().getAttribute(ATTRIBUTE_SRC);
   }
 

@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.rapidpm</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>04.03.00-RPM</version>
+    <version>04.03.01-RPM</version>
   </parent>
 
 
@@ -121,36 +121,41 @@
       </dependency>
       <dependency>
         <groupId>org.rapidpm.event</groupId>
-        <artifactId>2019-oc1-dev3111-components-test</artifactId>
+        <artifactId>sap-ui5-for-flow-components-test</artifactId>
         <version>01.00.00-SAPUI5-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.rapidpm.vaadin</groupId>
+        <artifactId>nano-vaadin-undertow</artifactId>
+        <version>01.00.01-RPM</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
-    <!--Infrastructure-->
-    <dependency>
-      <groupId>io.undertow</groupId>
-      <artifactId>undertow-core</artifactId>
-      <version>${undertow.version}</version>
-    </dependency>
+<!--    &lt;!&ndash;Infrastructure&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>io.undertow</groupId>-->
+<!--      <artifactId>undertow-core</artifactId>-->
+<!--      <version>${undertow.version}</version>-->
+<!--    </dependency>-->
 
-    <dependency>
-      <groupId>io.undertow</groupId>
-      <artifactId>undertow-servlet</artifactId>
-      <version>${undertow.version}</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>io.undertow</groupId>-->
+<!--      <artifactId>undertow-servlet</artifactId>-->
+<!--      <version>${undertow.version}</version>-->
+<!--    </dependency>-->
 
-    <dependency>
-      <groupId>io.undertow</groupId>
-      <artifactId>undertow-websockets-jsr</artifactId>
-      <version>${undertow.version}</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>io.undertow</groupId>-->
+<!--      <artifactId>undertow-websockets-jsr</artifactId>-->
+<!--      <version>${undertow.version}</version>-->
+<!--    </dependency>-->
 
-    <dependency>
-      <groupId>commons-cli</groupId>
-      <artifactId>commons-cli</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>commons-cli</groupId>-->
+<!--      <artifactId>commons-cli</artifactId>-->
+<!--    </dependency>-->
 
     <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
     <dependency>
@@ -249,13 +254,13 @@
   <build>
     <plugins>
       <!--      For dev/cooperation  - deactivated-->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--        <configuration>-->
+<!--          <skip>true</skip>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
       <!--      For dev/cooperation  - deactivated-->
 
       <plugin>

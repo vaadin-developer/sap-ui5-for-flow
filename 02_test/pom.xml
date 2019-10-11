@@ -16,6 +16,11 @@
   <dependencies>
     <dependency>
       <groupId>org.rapidpm.vaadin</groupId>
+      <artifactId>nano-vaadin-undertow</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.rapidpm.vaadin</groupId>
       <artifactId>sap-ui5-for-flow-components</artifactId>
     </dependency>
     <dependency>

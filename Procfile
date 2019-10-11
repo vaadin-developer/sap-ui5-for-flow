@@ -1,1 +1,1 @@
-web: java -jar 03_demoapp/target/vaadin-app.jar -port $PORT
+web: java -jar 03_demo/target/vaadin-app.jar -port $PORT
