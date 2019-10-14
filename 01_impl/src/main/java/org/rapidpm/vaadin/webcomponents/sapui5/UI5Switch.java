@@ -14,7 +14,7 @@ import static java.lang.Boolean.parseBoolean;
 
 @Tag(UI5Switch.TAG_NAME)
 @NpmPackage(value = "@ui5/webcomponents", version = UI5VersionDefinitions.UI5_VERSION)
-@JsModule("@ui5/webcomponents/dist/MessageBundleAssets.js")
+//@JsModule("@ui5/webcomponents/dist/MessageBundleAssets.js")
 @JsModule("@ui5/webcomponents/dist/Switch.js")
 public class UI5Switch
     extends Component
