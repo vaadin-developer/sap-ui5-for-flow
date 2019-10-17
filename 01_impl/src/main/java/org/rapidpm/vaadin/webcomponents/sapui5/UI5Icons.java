@@ -6,7 +6,8 @@ public enum UI5Icons {
 
   NONE("sap-icon://none"),
   ADD_EQUIPMENT("sap-icon://add-equipment"),
-  PHONE("sap-icon://phone");
+  PHONE("sap-icon://phone"),
+  NUTRITION_ACTIVITY("sap-icon://nutrition-activity");
 
   private String code;
 
