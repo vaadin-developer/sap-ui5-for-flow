@@ -21,10 +21,7 @@ public class UI5RadioButton extends AbstractSinglePropertyField<UI5RadioButton, 
 
   public UI5RadioButton() {
     super("selected", false, false);
-
-    getElement().addEventListener("select", event -> System.out.println(event.getEventData()));
-    getElement().addPropertyChangeListener("selected", "select",
-        event -> setModelValue(selectedProperty.get(this), true));
+    setSynchronizedEvent("select");
   }
 
   public UI5RadioButton(String text, String name) {
