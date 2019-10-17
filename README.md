@@ -39,7 +39,7 @@ Here is an overview on the SAP UI 5 <-> Vaadin Flow mapping:
 | [MessageStrip](https://sap.github.io/ui5-webcomponents/playground/components/MessageStrip/) |`org.rapidpm.vaadin.webcomponents.sapui5.UI5MessageStrip`|
 | [MultiComboBox](https://sap.github.io/ui5-webcomponents/playground/components/MultiComboBox/)||
 | [Panel](https://sap.github.io/ui5-webcomponents/playground/components/Panel/) ||
-| [RadioButton](https://sap.github.io/ui5-webcomponents/playground/components/RadioButton/)||
+| [RadioButton](https://sap.github.io/ui5-webcomponents/playground/components/RadioButton/)| `org.rapidpm.vaadin.webcomponents.sapui5.UI5RadioButton` | Only the first change event is passed to flow |
 | [Select](https://sap.github.io/ui5-webcomponents/playground/components/Select/)||
 | [ShellBar](https://sap.github.io/ui5-webcomponents/playground/components/ShellBar/)||
 | [Switch](https://sap.github.io/ui5-webcomponents/playground/components/Switch/)|`org.rapidpm.vaadin.webcomponents.sapui5.UI5Switch`|
