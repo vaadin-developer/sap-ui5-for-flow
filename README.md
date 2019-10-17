@@ -35,7 +35,7 @@ Here is an overview on the SAP UI 5 <-> Vaadin Flow mapping:
 | [Input](https://sap.github.io/ui5-webcomponents/playground/components/Input/) ||
 | [Label](https://sap.github.io/ui5-webcomponents/playground/components/Label/)||
 | [Link](https://sap.github.io/ui5-webcomponents/playground/components/Link/) |`org.rapidpm.vaadin.webcomponents.sapui5.UI5Link`|
-| [List](https://sap.github.io/ui5-webcomponents/playground/components/List/) ||
+| [List](https://sap.github.io/ui5-webcomponents/playground/components/List/) | `org.rapidpm.vaadin.webcomponents.sapui5.UI5List` | Basic mapping, no listeners, features missing |
 | [MessageStrip](https://sap.github.io/ui5-webcomponents/playground/components/MessageStrip/) |`org.rapidpm.vaadin.webcomponents.sapui5.UI5MessageStrip`|
 | [MultiComboBox](https://sap.github.io/ui5-webcomponents/playground/components/MultiComboBox/)||
 | [Panel](https://sap.github.io/ui5-webcomponents/playground/components/Panel/) ||
