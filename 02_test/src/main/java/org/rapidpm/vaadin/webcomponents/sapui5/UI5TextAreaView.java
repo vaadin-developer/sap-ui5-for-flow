@@ -1,16 +1,24 @@
 package org.rapidpm.vaadin.webcomponents.sapui5;
 
+import static org.rapidpm.vaadin.webcomponents.sapui5.UI5TextAreaView.NAV;
+import org.rapidpm.dependencies.core.logger.HasLogger;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
-import org.rapidpm.dependencies.core.logger.HasLogger;
-
-import static org.rapidpm.vaadin.webcomponents.sapui5.UI5TextAreaView.NAV;
-
 
 @Route(NAV)
-public class UI5TextAreaView extends Composite<Div>
-    implements HasLogger {
+public class UI5TextAreaView extends Composite<Div> implements HasLogger {
   public static final String NAV = "UI5TextAreaView";
 
+  public UI5TextAreaView() {
+    UI5TextArea textArea = new UI5TextArea();
+    textArea.setPlaceholder("Type here...");
+
+    UI5TextArea textAreaMaxLength = new UI5TextArea(30, true);
+    textAreaMaxLength.setPlaceholder("Type here...");
+
+    UI5TextArea textAreaWithValue = new UI5TextArea();
+    textAreaWithValue.setValue("Pre set value");
+    getContent().add(textArea, textAreaMaxLength, textAreaWithValue);
+  }
 }
