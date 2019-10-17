@@ -13,9 +13,9 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 public class UI5TextArea extends AbstractSinglePropertyField<UI5TextArea, String>
     implements HasUI5Disabled {
   static final String PROPERTY_MAX_LENGTH = "maxLength";
-  static final PropertyDescriptor<Boolean, Boolean> showExceededTextProperty =
+  static final PropertyDescriptor<Boolean, Boolean> SHOW_EXCEEDED_TEXT_PROPERTY =
       PropertyDescriptors.propertyWithDefault("showExceededText", false);
-  static final PropertyDescriptor<String, String> placeholderProperty =
+  static final PropertyDescriptor<String, String> PLACEHOLDER_PROPERTY =
       PropertyDescriptors.propertyWithDefault("placeholder", "");
 
   public UI5TextArea() {
@@ -30,11 +30,11 @@ public class UI5TextArea extends AbstractSinglePropertyField<UI5TextArea, String
   }
 
   public void setShowExceededText(boolean showExceededText) {
-    showExceededTextProperty.set(getElement(), showExceededText);
+    SHOW_EXCEEDED_TEXT_PROPERTY.set(getElement(), showExceededText);
   }
 
   public boolean isShowExceededText() {
-    return showExceededTextProperty.get(getElement());
+    return SHOW_EXCEEDED_TEXT_PROPERTY.get(getElement());
   }
 
   public void setMaxLength(int maxLength) {
@@ -50,10 +50,10 @@ public class UI5TextArea extends AbstractSinglePropertyField<UI5TextArea, String
   }
 
   public void setPlaceholder(String placeholder) {
-    placeholderProperty.set(getElement(), placeholder);
+    PLACEHOLDER_PROPERTY.set(getElement(), placeholder);
   }
 
   public String getPlaceholder() {
-    return placeholderProperty.get(getElement());
+    return PLACEHOLDER_PROPERTY.get(getElement());
   }
 }
