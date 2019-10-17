@@ -47,7 +47,7 @@ Here is an overview on the SAP UI 5 <-> Vaadin Flow mapping:
 | [Table](https://sap.github.io/ui5-webcomponents/playground/components/Table/) ||
 | [TextArea](https://sap.github.io/ui5-webcomponents/playground/components/TextArea/) ||
 | [Timeline](https://sap.github.io/ui5-webcomponents/playground/components/Timeline/) |`org.rapidpm.vaadin.webcomponents.sapui5.UI5Timeline`|
-| [Title](https://sap.github.io/ui5-webcomponents/playground/components/Title/) ||
+| [Title](https://sap.github.io/ui5-webcomponents/playground/components/Title/) | `org.rapidpm.vaadin.webcomponents.sapui5.UI5Title` |
 | [ToggleButton](https://sap.github.io/ui5-webcomponents/playground/components/ToggleButton/) |`org.rapidpm.vaadin.webcomponents.sapui5.UI5ToggleButton`|
 
 
