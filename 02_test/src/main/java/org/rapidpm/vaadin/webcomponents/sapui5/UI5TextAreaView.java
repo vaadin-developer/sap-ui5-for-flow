@@ -13,12 +13,14 @@ public class UI5TextAreaView extends Composite<Div> implements HasLogger {
   public UI5TextAreaView() {
     UI5TextArea textArea = new UI5TextArea();
     textArea.setPlaceholder("Type here...");
+    textArea.addValueChangeListener(event -> System.out.println(event.getValue()));
 
     UI5TextArea textAreaMaxLength = new UI5TextArea(30, true);
-    textAreaMaxLength.setPlaceholder("Type here...");
+    textAreaMaxLength.setPlaceholder("Type here, but max 30 chars...");
 
     UI5TextArea textAreaWithValue = new UI5TextArea();
     textAreaWithValue.setValue("Pre set value");
+
     getContent().add(textArea, textAreaMaxLength, textAreaWithValue);
   }
 }

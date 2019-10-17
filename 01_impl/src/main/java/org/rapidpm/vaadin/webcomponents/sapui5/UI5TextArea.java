@@ -20,6 +20,7 @@ public class UI5TextArea extends AbstractSinglePropertyField<UI5TextArea, String
 
   public UI5TextArea() {
     super("value", "", false);
+    setSynchronizedEvent("change");
   }
 
   public UI5TextArea(int maxLength, boolean showExceededText) {
