@@ -25,21 +25,21 @@ import org.rapidpm.dependencies.core.logger.HasLogger;
 
 
 /**
- * <ui5-timeline>
- * <ui5-timeline-item id="test-item"
- * title-text="called"
- * subtitle-text="20.02.2017 11:30"
- * icon="sap-icon://phone"
- * item-name="John Smith"
- * item-name-clickable>
- * </ui5-timeline-item>
- * <ui5-timeline-item title-text="Weekly Sync - CP Design" subtitle-text="27.07.2017 (11:00 - 12:30)" icon="sap-icon://calendar">
- *    <div>MR SOF02 2.43</div>
- *  </ui5-timeline-item>
- *  <ui5-timeline-item title-text="Video Converence Call - UI5" subtitle-text="31.01.2018 (12:00 - 13:00)" icon="sap-icon://calendar">
- *     <div>Online meeting</div>
- * </ui5-timeline-item>
- * </ui5-timeline>
+ * &lt;ui5-timeline&gt;
+ * &lt;ui5-timeline-item id=&quot;test-item&quot;
+ * title-text=&quot;called&quot;
+ * subtitle-text=&quot;20.02.2017 11:30&quot;
+ * icon=&quot;sap-icon://phone&quot;
+ * item-name=&quot;John Smith&quot;
+ * item-name-clickable&gt;
+ * &lt;/ui5-timeline-item&gt;
+ * &lt;ui5-timeline-item title-text=&quot;Weekly Sync - CP Design&quot; subtitle-text=&quot;27.07.2017 (11:00 - 12:30)&quot; icon=&quot;sap-icon://calendar&quot;&gt;
+ *    &lt;div&gt;MR SOF02 2.43&lt;/div&gt;
+ *  &lt;/ui5-timeline-item&gt;
+ *  &lt;ui5-timeline-item title-text=&quot;Video Converence Call - UI5&quot; subtitle-text=&quot;31.01.2018 (12:00 - 13:00)&quot; icon=&quot;sap-icon://calendar&quot;&gt;
+ *     &lt;div&gt;Online meeting&lt;/div&gt;
+ * &lt;/ui5-timeline-item&gt;
+ * &lt;/ui5-timeline&gt;
  *
  * @author svenruppert
  * @version $Id: $Id
