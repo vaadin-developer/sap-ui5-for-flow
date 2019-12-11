@@ -5,10 +5,20 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5TitleView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5TitleView extends Composite<Div> {
+  /** Constant <code>NAV="UI5TitleView"</code> */
   public static final String NAV = "UI5TitleView";
 
+  /**
+   * <p>Constructor for UI5TitleView.</p>
+   */
   public UI5TitleView() {
 
     getContent().add(new UI5Title(UI5TitleLevel.H1, "Title level 1"),

@@ -6,10 +6,20 @@ import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5PopOverView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5PopOverView extends Composite<Div> {
+  /** Constant <code>NAV="UI5PopOverView"</code> */
   public static final String NAV = "UI5PopOverView";
 
+  /**
+   * <p>Constructor for UI5PopOverView.</p>
+   */
   public UI5PopOverView() {
     final UI5Button ui5Button = new UI5Button();
     ui5Button.setText("Hello, UI5");

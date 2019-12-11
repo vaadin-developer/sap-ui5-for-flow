@@ -6,10 +6,20 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5TextAreaView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5TextAreaView extends Composite<Div> implements HasLogger {
+  /** Constant <code>NAV="UI5TextAreaView"</code> */
   public static final String NAV = "UI5TextAreaView";
 
+  /**
+   * <p>Constructor for UI5TextAreaView.</p>
+   */
   public UI5TextAreaView() {
     UI5TextArea textArea = new UI5TextArea();
     textArea.setPlaceholder("Type here...");

@@ -6,10 +6,20 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5ButtonView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5ButtonView extends Composite<Div> implements HasLogger {
+  /** Constant <code>NAV="UI5ButtonView"</code> */
   public static final String NAV = "UI5ButtonView";
 
+  /**
+   * <p>Constructor for UI5ButtonView.</p>
+   */
   public UI5ButtonView() {
     final UI5Button ui5Button1 = new UI5Button();
     ui5Button1.setText("Hello, UI5");

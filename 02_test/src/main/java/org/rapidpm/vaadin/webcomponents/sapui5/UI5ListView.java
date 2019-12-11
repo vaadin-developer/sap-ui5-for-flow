@@ -5,10 +5,20 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5ListView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5ListView extends Composite<VerticalLayout> {
+  /** Constant <code>NAV="UI5ListView"</code> */
   public static final String NAV = "UI5ListView";
 
+  /**
+   * <p>Constructor for UI5ListView.</p>
+   */
   public UI5ListView() {
     UI5List simpleList = new UI5List("Simple list",
         new UI5Li("Pineapple", UI5Icons.NUTRITION_ACTIVITY, "In-stock",

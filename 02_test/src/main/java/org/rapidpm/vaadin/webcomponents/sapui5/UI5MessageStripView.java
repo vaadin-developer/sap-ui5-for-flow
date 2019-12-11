@@ -5,10 +5,20 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5MessageStripView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5MessageStripView extends Composite<Div> {
+  /** Constant <code>NAV="UI5MessageStripView"</code> */
   public static final String NAV = "UI5MessageStripView";
 
+  /**
+   * <p>Constructor for UI5MessageStripView.</p>
+   */
   public UI5MessageStripView() {
     UI5MessageStrip information =
         new UI5MessageStrip("Information MessageStrip", UI5MessageStripType.INFORMATION);

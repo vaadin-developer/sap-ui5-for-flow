@@ -8,12 +8,22 @@ import org.rapidpm.dependencies.core.logger.HasLogger;
 
 import static org.rapidpm.vaadin.webcomponents.sapui5.UI5TimelineItemView.NAV;
 
+/**
+ * <p>UI5TimelineItemView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route(NAV)
 public class UI5TimelineItemView
     extends Composite<Div>
     implements HasLogger {
+  /** Constant <code>NAV="UI5TimelineItemView"</code> */
   public static final String NAV = "UI5TimelineItemView";
 
+  /**
+   * <p>Constructor for UI5TimelineItemView.</p>
+   */
   public UI5TimelineItemView() {
     final UI5TimelineItem ui5TimelineItem = new UI5TimelineItem();
     ui5TimelineItem.setItemName("timeLineIcon");

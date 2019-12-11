@@ -4,9 +4,18 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
+/**
+ * <p>UI5RadioButtonView class.</p>
+ *
+ * @author svenruppert
+ * @version $Id: $Id
+ */
 @Route("UI5RadioButtonView")
 public class UI5RadioButtonView extends Composite<Div> {
 
+  /**
+   * <p>Constructor for UI5RadioButtonView.</p>
+   */
   public UI5RadioButtonView() {
     getContent().add(new UI5RadioButton("Button A", "groupA", event -> System.out.println(event)),
         new UI5RadioButton("Button B", "groupA", event -> System.out.println(event)),
