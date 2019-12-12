@@ -24,13 +24,10 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - $PWD/:/usr/src/mymaven
-#      - ~/.m2/settings.xml:/root/.m2/settings.xml
-#      - ~/.gnupg/:/root/.gnupg/
     working_dir: /usr/src/mymaven
     #    command: 'mvn help:active-profiles
     command: 'mvn license:format clean deploy
                     -P_release_prepare
-                    -P_release
                     -P_release_sign-artifacts
                     -Pvaadin-install-nodejs
-                    -Dmaven.test.skip=true '
+                    -Dmaven.test.skip=false '
