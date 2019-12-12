@@ -17,7 +17,6 @@ package org.rapidpm.vaadin.webcomponents.sapui5;
 
 import com.vaadin.testbench.TestBenchElement;
 import com.vaadin.testbench.elementsbase.Element;
-import org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge;
 
 import static org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge.ATTRIBUTE_COLOR_SCHEME;
 import static org.rapidpm.vaadin.webcomponents.sapui5.UI5Badge.TAG_NAME;
