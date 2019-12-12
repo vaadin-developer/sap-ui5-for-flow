@@ -30,7 +30,7 @@
 
   <groupId>org.rapidpm.vaadin</groupId>
   <artifactId>sap-ui5-for-flow-parent</artifactId>
-  <version>00.01.00-SAPUI5</version>
+  <version>00.01.01-SAPUI5-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -98,19 +98,19 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.01.00-SAPUI5</version>
+        <version>00.01.01-SAPUI5-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.01.00-SAPUI5</version>
+        <version>00.01.01-SAPUI5-SNAPSHOT</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.event</groupId>
         <artifactId>sap-ui5-for-flow-components-test</artifactId>
-        <version>00.01.00-SAPUI5</version>
+        <version>00.01.01-SAPUI5-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
