@@ -24,13 +24,13 @@
   <parent>
     <groupId>org.rapidpm</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>04.05.02-RPM</version>
+    <version>04.06.01-RPM-SNAPSHOT</version>
   </parent>
 
 
   <groupId>org.rapidpm.vaadin</groupId>
   <artifactId>sap-ui5-for-flow-parent</artifactId>
-  <version>00.01.01-SAPUI5-SNAPSHOT</version>
+  <version>00.01.01-RPM-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -78,14 +78,16 @@
 
   <properties>
     <jdk.version>1.8</jdk.version>
-
-    <!--Vaadin-->
-    <vaadin-productionMode>false</vaadin-productionMode>
-    <vaadin-install-nodejs>true</vaadin-install-nodejs>
-    <!--    <frontend-maven-plugin.installDirectory>_data</frontend-maven-plugin.installDirectory>-->
-<!--    <undertow.version>2.0.26.Final</undertow.version>-->
-<!--    <testcontainers.version>1.12.1</testcontainers.version>-->
   </properties>
+
+  <repositories>
+    <repository>
+      <id>sven-ruppert</id>
+      <name>Dev Repo with SNAPSHOTS</name>
+      <layout>default</layout>
+      <url>http://repo.sven-ruppert.de/repository/maven-public/</url>
+    </repository>
+  </repositories>
 
   <modules>
     <module>01_impl</module>
@@ -98,19 +100,19 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.01.01-SAPUI5-SNAPSHOT</version>
+        <version>00.01.01-RPM-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.01.01-SAPUI5-SNAPSHOT</version>
+        <version>00.01.01-RPM-SNAPSHOT</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.event</groupId>
         <artifactId>sap-ui5-for-flow-components-test</artifactId>
-        <version>00.01.01-SAPUI5-SNAPSHOT</version>
+        <version>00.01.01-RPM-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
@@ -134,8 +136,9 @@
     <dependency>
       <groupId>net.bytebuddy</groupId>
       <artifactId>byte-buddy</artifactId>
-      <version>1.10.1</version>
+      <version>1.10.6</version>
     </dependency>
+
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
