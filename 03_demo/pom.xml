@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.rapidpm.vaadin</groupId>
     <artifactId>sap-ui5-for-flow-parent</artifactId>
-    <version>00.01.01-RPM-SNAPSHOT</version>
+    <version>00.02.00-alpha</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -90,7 +90,6 @@
     <dependency>
       <groupId>com.github.appreciated</groupId>
       <artifactId>vaadin-css-grid</artifactId>
-      <version>2.0.0.beta3</version>
     </dependency>
 
 

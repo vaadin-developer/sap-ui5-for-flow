@@ -22,15 +22,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.rapidpm</groupId>
+    <groupId>org.rapidpm.vaadin</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>04.06.01-RPM-SNAPSHOT</version>
+    <version>05.00.00-alpha-b4</version>
   </parent>
 
 
   <groupId>org.rapidpm.vaadin</groupId>
   <artifactId>sap-ui5-for-flow-parent</artifactId>
-  <version>00.01.01-RPM-SNAPSHOT</version>
+  <version>00.02.00-alpha</version>
 
   <packaging>pom</packaging>
 
@@ -92,13 +92,17 @@
       </snapshots>
       <id>central</id>
       <name>libs-release</name>
-      <url>${deploy-repo-url}</url>
+      <!--      <url>${deploy-repo-url}</url>-->
+      <url>http://jfrog-repo.sven-ruppert.de:8081/artifactory/libs-release</url>
     </repository>
     <repository>
-      <snapshots />
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
       <id>snapshots</id>
       <name>libs-snapshot</name>
-      <url>${deploy-repo-snapshots-url}</url>
+      <url>http://jfrog-repo.sven-ruppert.de:8081/artifactory/libs-snapshot</url>
     </repository>
   </repositories>
   <pluginRepositories>
@@ -108,15 +112,20 @@
       </snapshots>
       <id>central</id>
       <name>libs-release</name>
-      <url>${deploy-repo-url}</url>
+      <url>http://jfrog-repo.sven-ruppert.de:8081/artifactory/libs-release</url>
+      <!--      <url>${deploy-repo-url}</url>-->
     </pluginRepository>
     <pluginRepository>
-      <snapshots />
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
       <id>snapshots</id>
       <name>libs-snapshot</name>
-      <url>${deploy-repo-snapshots-url}</url>
+      <url>http://jfrog-repo.sven-ruppert.de:8081/artifactory/libs-snapshot</url>
     </pluginRepository>
   </pluginRepositories>
+
 
   <modules>
     <module>01_impl</module>
@@ -129,24 +138,24 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.01.01-RPM-SNAPSHOT</version>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.01.01-RPM-SNAPSHOT</version>
+        <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.event</groupId>
         <artifactId>sap-ui5-for-flow-components-test</artifactId>
-        <version>00.01.01-RPM-SNAPSHOT</version>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>nano-vaadin-undertow</artifactId>
-        <version>01.00.05-RPM-SNAPSHOT</version>
+        <version>01.01.00-alpha-b11</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
