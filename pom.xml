@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.rapidpm.vaadin</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>05.00.00-alpha-b6</version>
+    <version>05.00.00-alpha-b7</version>
   </parent>
 
 
@@ -155,7 +155,7 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>nano-vaadin-undertow</artifactId>
-        <version>01.01.00-alpha-b15</version>
+        <version>01.01.00-alpha-b16</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -174,7 +174,7 @@
     <dependency>
       <groupId>net.bytebuddy</groupId>
       <artifactId>byte-buddy</artifactId>
-      <version>1.10.7</version>
+      <version>1.10.8</version>
     </dependency>
 
     <dependency>
