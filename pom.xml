@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.rapidpm.vaadin</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>05.00.00-alpha-b12</version>
+    <version>05.00.00-alpha-b100</version>
   </parent>
 
 
@@ -155,7 +155,7 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>nano-vaadin-undertow</artifactId>
-        <version>01.01.00-alpha-b30</version>
+        <version>01.01.00-alpha-b31</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
