@@ -30,7 +30,7 @@
 
   <groupId>org.rapidpm.vaadin</groupId>
   <artifactId>sap-ui5-for-flow-parent</artifactId>
-  <version>00.02.00-alpha</version>
+  <version>00.02.01</version>
 
   <packaging>pom</packaging>
 
