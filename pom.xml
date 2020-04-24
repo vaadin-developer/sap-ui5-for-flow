@@ -138,12 +138,12 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.02.01-101</version>
+        <version>00.02.01-102</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.02.01-101</version>
+        <version>00.02.01-102</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
