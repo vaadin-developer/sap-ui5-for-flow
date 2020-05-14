@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.rapidpm.vaadin</groupId>
     <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>05.00.01-164</version>
+    <version>05.00.01-168</version>
   </parent>
 
 
@@ -138,12 +138,12 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.02.01-104</version>
+        <version>00.02.01-105</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.02.01-104</version>
+        <version>00.02.01-105</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
@@ -155,7 +155,7 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>nano-vaadin-undertow</artifactId>
-        <version>01.01.01-75</version>
+        <version>01.01.01-76</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -174,7 +174,7 @@
     <dependency>
       <groupId>net.bytebuddy</groupId>
       <artifactId>byte-buddy</artifactId>
-      <version>1.10.9</version>
+      <version>1.10.10</version>
     </dependency>
 
     <dependency>
