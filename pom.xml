@@ -138,12 +138,12 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.02.01-106</version>
+        <version>00.02.01-107</version>
       </dependency>
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>sap-ui5-for-flow-components</artifactId>
-        <version>00.02.01-106</version>
+        <version>00.02.01-107</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
@@ -155,7 +155,7 @@
       <dependency>
         <groupId>org.rapidpm.vaadin</groupId>
         <artifactId>nano-vaadin-undertow</artifactId>
-        <version>01.01.01-77</version>
+        <version>01.01.01-78</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
